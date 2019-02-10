@@ -1,0 +1,9 @@
+block add_book
+    div(class="w3-cell w3-margin w3-rest w3-container w3-card")
+        form(class=" w3-padding" style="background: white" action="/" method="POST")
+            h3 Новая книга
+            input(type="text" class="w3-input" name="name" placeholder="Название")
+            input(type="text" class="w3-input" name="author" placeholder="Автор")
+            input(type="text" class="w3-input" name="year" placeholder="Год")
+            input(type="hidden" name="type" value="add_book")
+            button(class="w3-button w3-margin w3-right w3-green" type="submit") Добавить
